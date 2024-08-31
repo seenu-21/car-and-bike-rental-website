@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Car and Bike Rental Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            margin-top: 20px;
+            margin-right: 10%;
+            bottom: 500px;
+
+        }
+        .bgimg{
+            background-image: url('/Images/book.jpg');
+            width: 100%;
+            height: 130vh;
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
+        .formdiv{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            align-items: flex-start;
+            margin-left: 60%;
+            
+        }
+
+        .container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        form {
+            background-color: #ffffff8e;
+            width: 400px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       
+        
+        }
+        form input textarea{
+            background-color: #ffffff8e;
+
+        }
+       
+
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        label {
+            font-weight: bold;
+            flex: 1;
+            width: 50%;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        select,
+        textarea,
+        input[type="number"],
+        input[type="date"],
+        input[type="time"] {
+            flex: 2;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            width: 100%;
+        }
+
+        select {
+            height: 40px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="mynavbar navbar navbar-expand-md fixed-top ">
+        <a href="index.html" class="navbar-brand"><img src="/Images/logo/srinivas1.png" style="padding: 10px;" alt=""
+                width="80px"></a>
+        <button class="navbar-toggler " data-bs-toggle="collapse" data-bs-target="#menu">
+            <sup class="navbar-toggler-icon"></sup>
+        </button>
+        <div class="navbar-collapse collapse " id="menu">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link  active"><span style="color: white;">Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link active"><span style="color: white;">About us</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active"><span style="color: white;">Contact us</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="book.html" class="nav-link active"><span style="color: white;">Book Now</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="bgimg">.</div>
+    <div class="formdiv"><h2 style="color: white;">Car and Bike Rental Form</h2>
+    <form  method="POST">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter Your Mobile Number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" placeholder="Enter Your Address" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="vehicle">Select a Vehicle:</label>
+            <select id="vehicle" name="vehicle" required>
+                <option value="Car">Car</option>
+                <option value="Bike">Bike</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="model">Select a Model:</label>
+            <select id="model" name="model" required>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="start_date">Start Date:</label>
+            <input type="date" id="start_date" name="start_date" required>
+            <input type="time" id="start_time" name="start_time" required>
+        </div>
+
+        <div class="form-group">
+            <label for="end_date">End Date:</label>
+            <input type="date" id="end_date" name="end_date" required>
+            <input type="time" id="end_time" name="end_time" required>
+        </div>
+
+        <div class="form-group">
+            <label for="duration">Duration:</label>
+            <input type="text" id="duration" name="duration" required readonly>
+        </div>
+
+        <div class="form-group">
+            <label for="price">Price:</label>
+            <input type="text" id="price" name="price" required readonly>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form></div>
+    
+
+    <script>
+        function updateModels() {
+            const vehicleType = $("#vehicle").val();
+            const modelSelect = $("#model");
+            modelSelect.empty();
+            
+            if (vehicleType === "Car") {
+                const carModels = ["Safari", "Honda", "Hundai","Swift","Crysta","Hycross","Harrier","Swift"];
+                $.each(carModels, function(index, model) {
+                    modelSelect.append(new Option(model, model));
+                });
+            } else if (vehicleType === "Bike") {
+                const bikeModels = ["Yamaha", "Hornet", "Xtreme","Classic","Hunter","Rider","Pulsar","Meteor", "Triumph","Roadster","Duke"];
+                $.each(bikeModels, function(index, model) {
+                    modelSelect.append(new Option(model, model));
+                });
+            }
+            calculateTotal();
+        }
+
+        function calculateTotal() {
+            const startDate = new Date($("#start_date").val() + "T" + $("#start_time").val());
+            const endDate = new Date($("#end_date").val() + "T" + $("#end_time").val());
+            const vehicleType = $("#vehicle").val();
+            const model = $("#model").val();
+            const carDayRate = 2000;
+            const carHourRate = 100;
+            const bikeDayRate = 1000;
+            const bikeHourRate = 50;
+
+            if (!isNaN(startDate) && !isNaN(endDate) && startDate <= endDate) {
+                const timeDiff = endDate - startDate;
+                const daysDiff = (timeDiff / (1000 * 60 * 60 * 24));
+                const hoursDiff = (timeDiff / (1000 * 60 * 60)) % 24;
+                const minutes = (hoursDiff % 1) * 60;
+
+                const totalDays = daysDiff + (hoursDiff >= 24 ? 1 : 0);
+                const totalHours = hoursDiff >= 24 ? hoursDiff % 24 : hoursDiff;
+
+                const durationText = `${totalDays} days and ${Math.floor(totalHours)} hours ${minutes.toFixed(0)} minutes`;
+                $("#duration").val(durationText);
+
+                let totalPrice;
+                if (vehicleType === "Car") {
+                    if (model === "Safari") {
+                        totalPrice = (totalDays * carDayRate) + (totalHours * carHourRate);
+                    } else if (model === "Honda") {
+                        totalPrice = (totalDays * (carDayRate + 500)) + (totalHours * (carHourRate + 50));
+                    } else if (model === "Hundai") {
+                        totalPrice = (totalDays * (carDayRate + 1000)) + (totalHours * (carHourRate + 100));
+                    }
+                    else if(model==="Swift"){
+                        totalPrice = (totalDays * (carDayRate + 1000)) + (totalHours * (carHourRate + 100));
+                    }
+                    else if(model==="Crysta"){
+                        totalPrice = (totalDays * (carDayRate + 1000)) + (totalHours * (carHourRate + 200));
+                    }
+                    else if(model==="Hycross"){
+                        totalPrice = (totalDays * (carDayRate + 1000)) + (totalHours * (carHourRate + 250));
+                    }
+                    else if(model==="Harrier"){
+                        totalPrice = (totalDays * (carDayRate + 1000)) + (totalHours * (carHourRate + 300));
+                    }
+                } else if (vehicleType === "Bike") {
+                    if (model === "Yamaha") {
+                        totalPrice = (totalDays * bikeDayRate) + (totalHours * bikeHourRate);
+                    } else if (model === "Hornet") {
+                        totalPrice = (totalDays * (bikeDayRate + 200)) + (totalHours * (bikeHourRate + 20));
+                    } else if (model === "Xtreme") {
+                        totalPrice = (totalDays * (bikeDayRate + 400)) + (totalHours * (bikeHourRate + 30));
+                    }
+                    else if (model === "Classic") {
+                        totalPrice = (totalDays * (bikeDayRate + 400)) + (totalHours * (bikeHourRate + 40));
+                    }
+                    else if (model === "Hunter") {
+                        totalPrice = (totalDays * (bikeDayRate + 400)) + (totalHours * (bikeHourRate + 50));
+                    }
+                    else if (model === "Rider") {
+                        totalPrice = (totalDays * (bikeDayRate + 400)) + (totalHours * (bikeHourRate + 60));
+                    }
+                    else if (model === "Pulsar") {
+                        totalPrice = (totalDays * (bikeDayRate + 400)) + (totalHours * (bikeHourRate + 70));
+                    }
+                    else if (model === "Meteor") {
+                        totalPrice = (totalDays * (bikeDayRate + 400)) + (totalHours * (bikeHourRate + 80));
+                    }
+                    else if (model === "Triumph") {
+                        totalPrice = (totalDays * (bikeDayRate + 400)) + (totalHours * (bikeHourRate + 80));
+                    }
+                    else if (model === "Roadster") {
+                        totalPrice = (totalDays * (bikeDayRate + 400)) + (totalHours * (bikeHourRate + 90));
+                    }
+                    else if (model === "Duke") {
+                        totalPrice = (totalDays * (bikeDayRate + 400)) + (totalHours * (bikeHourRate + 100));
+                    }
+                    
+
+                }
+                $("#price").val(`₹ ${totalPrice.toFixed(2)}`);
+            } else {
+                $("#duration").val('');
+                $("#price").val('');
+            }
+        }
+
+        $("#vehicle").change(updateModels);
+        $("#start_date, #start_time, #end_date, #end_time, #model").change(calculateTotal);
+
+        updateModels();
+    </script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>

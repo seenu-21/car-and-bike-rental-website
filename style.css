@@ -1,0 +1,304 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+body{
+   background-color: azure;
+}
+a{
+    text-decoration: none;
+}
+.mynavbar{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(172, 50, 50, 0);
+    color: white;
+
+}
+.mynavbar.navbar-scrolled {
+    background-color: #FF5733; 
+    transition: background-color  0.21s; 
+
+}
+.firstpage{
+    position: relative;
+    bottom: 350px;
+
+}
+
+.quote-container{
+    color: white;
+text-align: center;
+}
+
+  
+.booknow{
+    justify-content:space-evenly;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    width: 70%;
+    margin-left: 15%;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.119);
+}
+.booknow:hover{
+    background-color:  rgba(255, 255, 255, 0.619);
+}
+.main_body{
+    position: relative;
+    bottom: 130px;
+
+}
+.spanred{
+    color: #e03637;
+}
+.spangrey{
+    color: grey;
+}
+
+
+
+
+.icons{
+    width: 60px;
+    height: 60px;
+}
+.ilabel{
+    position: relative;
+    bottom: 10px;  
+    color: white;     
+}
+.icons {
+    justify-content: space-evenly;    
+    align-content:flex-end;
+    justify-items: start;
+    display: flex;
+    width: 100%;
+    background-color: #1a1a1a;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+#all{
+    text-decoration: none;
+    color:white;
+    display: inline-block;
+
+}
+
+
+.icon {
+    width: 90px;
+    height: 80px;
+    cursor: pointer;
+    color: black;
+    border-bottom: 0;
+    transition: border-bottom 0.4s ease-in-out;
+}
+.ilabel{
+    position: relative;
+}
+
+.icon:hover {
+    width: 85px;
+    height: 75px;
+    background-color: #FF5733;
+    border-bottom: 5px solid rgb(255, 255, 255);
+}
+
+
+.vehicles {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 35px;
+}
+
+.vehicle {
+    margin-top: 20px;
+    width: 280px;
+    height: 250px;
+    display: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+.iconimg{
+    width: 60px;
+    height: 60px;
+}
+@media only screen and (max-width:500px) {
+    .iconimg{
+        width: 30px;
+        height: 30px;
+    }
+    .bname {
+        padding-top: 75px;
+        padding-left: 10px;
+        color: black;
+        font-size: 15px;
+    
+    
+    }
+    .ilabel{
+        position: relative;
+        font-size: 15px;
+    }
+}
+
+.bname {
+    padding-top: 150px;
+    padding-left: 20px;
+    color: black;
+    font-size: 30px;
+
+
+}
+
+.price {
+    color: black;
+    padding-left: 20px;
+}
+.bikelink{
+    text-decoration: none;
+}
+.welcome{
+    background-color: #1a1a1a;
+    display: grid;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.white{
+    color: white;
+
+}
+.specials{
+    background-color: #1a1a1a;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-size: cover;    
+}
+.offer{
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.redbox{
+    background-color: #e03636d7; ;
+    width: 200px;
+    height: 100px;
+}
+.why{
+    background-color: #1a1a1a;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-size: cover;    
+}
+.logo{
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 5px;
+}
+.logoimg{
+    width: 90px;
+
+}
+.about-us-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.employee {
+    display: inline-block;
+    margin: 20px;
+}
+
+.employee img {
+    max-width: 200px;
+    border-radius: 100%;
+}
+
+.employee .name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .container {
+    width: 960px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  footer h3 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  footer p {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  footer li {
+    margin-bottom: 10px;
+  }
+  
+  footer a {
+    color: #fff;
+  }
+  
+  footer a:hover {
+    color: #ccc;
+  }
+  
+  .social-media {
+    text-align: left;
+  }
+  
+  .social-media li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .social-media i {
+    font-size: 1.5em;
+  }
