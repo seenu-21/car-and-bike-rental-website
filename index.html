@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        
+        <link rel="icon" type="image/x-icon" href="./Images/logo/logo1.png">
+
+    <title>Car and Bike Rentals</title>
+</head>
+
+<body>
+
+    <div class="mynavbar navbar navbar-expand-md fixed-top ">
+        <a href="index.html" class="navbar-brand"><img src="/Images/logo/srinivas1.png" style="padding: 5px;" alt=""
+                width="80px"></a>
+        <button class="navbar-toggler " data-bs-toggle="collapse" data-bs-target="#menu">
+            <sup class="navbar-toggler-icon"></sup>
+        </button>
+        <div class="navbar-collapse collapse " id="menu">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link  active"><span style="color: white;">Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link active"><span style="color: white;">About us</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active"><span style="color: white;">Contact us</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="book.html" class="nav-link active"><span style="color: white;">Book Now</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="sliding"><img name="slide" width="100%" height="100%"></div>
+
+
+
+
+   
+    <br><br>
+    <div class="main_body">
+
+        <div class="icons">
+
+
+            <div class="icon" onclick="showVehicles([0, 1, 2, 3, 4, 5, 6, 7 ])">
+                <img class="iconimg" src="./Images/icons/bike21.png" alt="Icon 1">
+                <span class="ilabel">Super bike</span>
+
+            </div>
+            <div class="icon" onclick="showVehicles([8, 9, 10, 11, 12, 13, 14, 15])">
+                <img class="iconimg" src="./Images/icons/bike1.png" alt="Icon 2">
+                <span class="ilabel">Bike</span>
+
+            </div>
+            <div class="icon" onclick="showVehicles([16, 17, 18, 19, 20, 21, 22, 23])">
+                <img class="iconimg" src="/Images/icons/car1.png" alt="Icon 3">
+                <span class="ilabel">Car</span>
+
+            </div>
+            <div class="icon" onclick="showVehicles([24, 25, 26, 27, 28, 29, 30, 31])">
+                <img class="iconimg" src="/Images/icons/scoter1.png" alt="Icon 4">
+                <span class="ilabel">Scooter</span>
+
+            </div>
+            <div class="icon" onclick="showVehicles([32, 33, 34, 35, 36, 37, 38, 39, 40])">
+                <img class="iconimg" src="/Images/icons/ev1.png" alt="Icon 5">
+                <span class="ilabel">Ev's</span>
+
+            </div>
+        </div>
+        <div class="vehicles">
+            <!-- super bike -->
+            <a href="./bikes/Suzuki-GSX.html" class="bikelink">
+                <div class="vehicle" id="vehicle0"
+                    style="background-image: url('/Images/bikes_cars/Suzuki-GSXR1001.webp');"
+                    onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/Suzuki-GSXR1000.webp)';"
+                    onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/Suzuki-GSXR1001.webp)';">
+
+                    <h1 class="bname">Suzuki-GSXR1001 </h1>
+                    <p class="price">1899/- per day</p>
+                </div>
+            </a>
+            <a href="./bikes/hayabusa.html" class="bikelink">
+                <div class="vehicle" id="vehicle1" style="background-image: url('/Images/bikes_cars/hayabusa.webp');"
+                    onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/hayabusa1.webp)';"
+                    onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/hayabusa.webp)';">
+
+                    <h1 class="bname">Hayabusa </h1>
+                    <p class="price">1899/- per day</p>
+                </div>
+            </a>
+            <a href="./bikes/ninja.html" class="bikelink">
+                <div class="vehicle" id="vehicle2" style="background-image: url('/Images/bikes_cars/ninja.webp');"
+                    onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/ninja1.webp)';"
+                    onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/ninja.webp)';">
+                    <h1 class="bname">Ninja </h1>
+                    <p class="price">1899/- per day</p>
+                </div>
+            </a>
+
+            <a href="./bikes/duke.html" class="bikelink">
+                <div class="vehicle" id="vehicle3" style="background-image: url('/Images/bikes_cars/duke.webp');"
+                    onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/duke1.webp)';"
+                    onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/duke.webp)';">
+                    <h1 class="bname">Duke </h1>
+                    <p class="price">1899/- per day</p>
+                </div>
+            </a>
+
+            <a href="./bikes/42.html" class="bikelink">
+                <div class="vehicle" id="vehicle4" style="background-image: url('/Images/bikes_cars/42.webp');"
+                    onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/425.webp)';"
+                    onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/42.webp)';">
+
+                    <h1 class="bname">Yezdi Roadster </h1>
+                    <p class="price">1899/- per day</p>
+                </div>
+            </a>
+
+            <a href="./bikes/bonneville.html" class="bikelink">
+                <div class="vehicle" id="vehicle5" style="background-image: url('/Images/bikes_cars/bonneville.webp');"
+                    onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/bonneville1.webp)';"
+                    onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/bonneville.webp)';">
+
+                    <h1 class="bname">Triumph Bonneville </h1>
+                    <p class="price">1899/- per day</p>
+                </div>
+            </a>
+
+            <a href="./bikes/fat.html" class="bikelink">
+                <div class="vehicle" id="vehicle6" style="background-image: url('/Images/bikes_cars/fat.webp');"
+                    onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/fat1.webp)';"
+                    onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/fat.webp)';">
+                    <h1 class="bname">Harley-Davidson Fat </h1>
+                    <p class="price">1899/- per day</p>
+                </div>
+            </a>
+
+            <a href="./bikes/meteor.html" class="bikelink">
+                <div class="vehicle" id="vehicle7" style="background-image: url('/Images/bikes_cars/meteor.webp');"
+                    onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/meteor1.webp)';"
+                    onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/meteor.webp)';">
+                    <h1 class="bname">Meteor </h1>
+                    <p class="price">1899/- per day</p>
+            </a>
+        </div>
+        <!-- bikes -->
+        <a href="./bikes/pulsar.html" class="bikelink">
+            <div class="vehicle" id="vehicle8" style="background-image: url('/Images/bikes_cars/pulsar.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/pulsar1.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/pulsar.webp)';">
+                <h1 class="bname">Pulsar</h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+        <a href="./bikes/rider.html" class="bikelink">
+            <div class="vehicle" id="vehicle9" style="background-image: url('/Images/bikes_cars/rider1.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/rider.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/rider1.webp)';">
+                <h1 class="bname">TVS Rider </h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+
+        <a href="./bikes/royal.html" class="bikelink">
+            <div class="vehicle" id="vehicle10" style="background-image: url('/Images/bikes_cars/royal.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/royal1.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/royal.webp)';">
+                <h1 class="bname">Hunter </h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+
+        <a href="./bikes/classic.html" class="bikelink">
+            <div class="vehicle" id="vehicle11" style="background-image: url('/Images/bikes_cars/classic.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/classic1.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/classic.webp)';">
+                <h1 class="bname">Classic</h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+
+        <a href="./bikes/xtreme.html" class="bikelink">
+            <div class="vehicle" id="vehicle12" style="background-image: url('/Images/bikes_cars/xtreme.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/xtreme1.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/xtreme.webp)';">
+                <h1 class="bname">Xtreme</h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+
+        <a href="./bikes/pulsarns.html" class="bikelink">
+            <div class="vehicle" id="vehicle13" style="background-image: url('/Images/bikes_cars/pulsarns.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/pulsarns6.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/pulsarns.webp)';">
+                <h1 class="bname">Pulsar Ns 200</h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+
+        <a href="./bikes/hornet.html" class="bikelink">
+            <div class="vehicle" id="vehicle14" style="background-image: url('/Images/bikes_cars/hornet2.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/hornet.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/hornet2.webp)';">
+                <h1 class="bname">Honda Hornet </h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+
+        <a href="./bikes/fz1.html" class="bikelink">
+            <div class="vehicle" id="vehicle15" style="background-image: url('/Images/bikes_cars/fz1.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/fz2.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/fz1.webp)';">
+                <h1 class="bname">Yamaha FZ</h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+
+        <!-- cars -->
+        <a href="./bikes/swift_1.html" class="bikelink">
+            <div class="vehicle" id="vehicle16" style="background-image: url('/Images/bikes_cars/cars/swift_1.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/cars/swift_2.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/cars/swift_1.webp)';">
+                <h1 class="bname">Swift Desire</h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+
+        <a href="./bikes/harrier_1.html" class="bikelink">
+            <div class="vehicle" id="vehicle17" style="background-image: url('/Images/bikes_cars/cars/harrier_1.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/cars/harrier_2.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/cars/harrier_1.webp)';">
+
+                <h1 class="bname">Harrier </h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+        <a href="./bikes/hycross_1.html" class="bikelink">
+            <div class="vehicle" id="vehicle18" style="background-image: url('/Images/bikes_cars/cars/hycross_1.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/cars/hycross_2.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/cars/hycross_1.webp)';">
+
+                <h1 class="bname">Hycross </h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+
+        <a href="./bikes/crysta_1.html" class="bikelink">
+            <div class="vehicle" id="vehicle19" style="background-image: url('/Images/bikes_cars/cars/crysta_1.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/cars/crysta_2.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/cars/crysta_1.webp)';">
+
+                <h1 class="bname">Crysta </h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+
+        <a href="./bikes/scorpio.html" class="bikelink">
+            <div class="vehicle" id="vehicle20" style="background-image: url('/Images/bikes_cars/cars/scorpio.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/cars/scorpio1.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/cars/scorpio.webp)';">
+                <h1 class="bname">Swift </h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+
+        <a href="./bikes/i20.html" class="bikelink">
+            <div class="vehicle" id="vehicle21" style="background-image: url('/Images/bikes_cars/cars/i20.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/cars/i20_1.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/cars/i20.webp)';">
+
+                <h1 class="bname">Hundai i20 </h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+
+        <a href="./bikes/city.html" class="bikelink">
+            <div class="vehicle" id="vehicle22" style="background-image: url('/Images/bikes_cars/cars/city.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/cars/city1.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/cars/city.webp)';">
+
+                <h1 class="bname">Honda City </h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+
+        <a href="./bikes/safari.html" class="bikelink">
+            <div class="vehicle" id="vehicle23" style="background-image: url('/Images/bikes_cars/cars/safari.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/cars/safari1.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/cars/safari.webp)';">
+
+                <h1 class="bname">Safari </h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+
+        <!-- scoters -->
+        <a href="./bikes/ntorq-1.html" class="bikelink">
+            <div class="vehicle" id="vehicle24" style="background-image: url('/Images/bikes_cars/ntorq-1.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/ntorq-2.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/ntorq-1.webp)';">
+
+                <h1 class="bname">Ntorq</h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+
+        <a href="./bikes/dio1.html" class="bikelink">
+            <div class="vehicle" id="vehicle25" style="background-image: url('/Images/bikes_cars/dio1.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/dio2.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/dio1.webp)';">
+
+                <h1 class="bname">Dio</h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+
+        <a href="./bikes/ray-1.html" class="bikelink">
+            <div class="vehicle" id="vehicle26" style="background-image: url('/Images/bikes_cars/ray-1.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/ray-3.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/ray-1.webp)';">
+
+                <h1 class="bname">Ray</h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+
+        <a href="./bikes/activa-6g_1.html" class="bikelink">
+            <div class="vehicle" id="vehicle27" style="background-image: url('/Images/bikes_cars/activa-6g_1.webp')"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/activa-6g_2.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/activa-6g_1.webp)';">
+
+                <h1 class="bname">Activa 6g</h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+
+        <a href="./bikes/ntorq-1.html" class="bikelink">
+            <div class="vehicle" id="vehicle28" style="background-image: url('/Images/bikes_cars/ntorq-1.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/ntorq-2.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/ntorq-1.webp)';">
+
+                <h1 class="bname">ntorq </h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+        <a href="./bikes/dio1.html" class="bikelink">
+            <div class="vehicle" id="vehicle29" style="background-image: url('/Images/bikes_cars/dio1.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/dio2.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/dio1.webp)';">
+
+                <h1 class="bname">dio1 </h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+        <a href="./bikes/ray-1.html" class="bikelink">
+            <div class="vehicle" id="vehicle30" style="background-image: url('/Images/bikes_cars/ray-1.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/activa-6g_2.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/ray-1.webp)';">
+
+                <h1 class="bname">ray </h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+        <a href="./bikes/activa-6g_1.html" class="bikelink">
+            <div class="vehicle" id="vehicle31" style="background-image: url('/Images/bikes_cars/activa-6g_1.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/ray-3.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/activa-6g_1.webp)';">
+
+                <h1 class="bname">activa </h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+
+
+        <!-- evS -->
+        <a href="./bikes/comet.html" class="bikelink">
+            <div class="vehicle" id="vehicle32" style="background-image: url('/Images/bikes_cars/cars/comet.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/cars/comet1.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/cars/comet.webp)';">
+
+                <h1 class="bname">MG Comet </h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+
+        <a href="./bikes/nexon.html" class="bikelink">
+            <div class="vehicle" id="vehicle33" style="background-image: url('/Images/bikes_cars/cars/nexon.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/cars/nexon1.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/cars/nexon.webp)';">
+
+                <h1 class="bname">Tata Nexon </h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+
+        <a href="./bikes/tiago.html" class="bikelink">
+            <div class="vehicle" id="vehicle34" style="background-image: url('/Images/bikes_cars/cars/tiago.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/cars/tiago1.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/cars/tiago.webp)';">
+
+                <h1 class="bname">Tata Tiago </h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+        <a href="./bikes/q8.html" class="bikelink">
+            <div class="vehicle" id="vehicle35" style="background-image: url('/Images/bikes_cars/cars/q8.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/cars/q81.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/cars/q8.webp)';">
+
+                <h1 class="bname">Audi Q8 Ev </h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+
+        <a href="./bikes/s1-pro.html" class="bikelink">
+            <div class="vehicle" id="vehicle36" style="background-image: url('/Images/bikes_cars/s1-pro.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/s1-pro1.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/s1-pro.webp)';">
+
+                <h1 class="bname">Ola s1-pro </h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+
+        <a href="./bikes/rv-400.html" class="bikelink">
+            <div class="vehicle" id="vehicle37" style="background-image: url('/Images/bikes_cars/rv-400.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/rv-4001.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/rv-400.webp)';">
+
+                <h1 class="bname">Rv 400</h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+
+        <a href="./bikes/450x.html" class="bikelink">
+            <div class="vehicle" id="vehicle38" style="background-image: url('/Images/bikes_cars/450x.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/450x1.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/450x.webp)';">
+
+                <h1 class="bname">Ather 450x </h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+
+        <a href="./bikes/s1-pro.html" class="bikelink">
+            <div class="vehicle" id="vehicle39" style="background-image: url('/Images/bikes_cars/s1-pro.webp');"
+                onmouseover="this.style.backgroundImage='url(/Images/bikes_cars/s1-pro2.webp)';"
+                onmouseout="this.style.backgroundImage='url(/Images/bikes_cars/s1-pro.webp)';">
+
+                <h1 class="bname">Ola s1 </h1>
+                <p class="price">899/- per day</p>
+            </div>
+        </a>
+
+    </div>
+    <div class="welcome">
+
+        <h1 class="white"><sup class="spangrey">_____</sup><sup class="spanred">_</sup> Specials <sup
+                class="spanred">_</sup><sup class="spangrey">_____</sup> </h1>
+        <p class="white">Welcome to Auto car</p>
+    </div>
+       <div class="specials">
+        <div class="offer" style="background-image: url('/Images/specials/bmw4.png');">
+            <h1 style="color:rgb(208, 29, 29); font-size: 24px;"><b>BMW X Series 2021</b></h1>
+            <span style="color:white;">Available For</span>
+            <span style="color:rgb(208, 29, 29); "><b>Limited Period</b></span>
+            <div class="redbox" style="margin-top: 250px;">
+                <h1 style="color:white;"><b>10%Apr</b></h1>
+            </div>
+        </div>
+
+        <div class="offer" style="background-image: url('/Images/specials/bmw.png');">
+            <h1 style="margin-top: 300px; color:white;"><b>BMW X6 Serie</b>s</h1>
+            <p style="color:rgb(208, 29, 29);"><b>4000rs</b><span style="color:white;">/day</span></p>
+        </div>
+
+        <div class="offer" style="background-image: url('/Images/specials/bmw3.png');">
+            <h1 style="color:rgb(208, 29, 29); font-size: 24px;"><b>BMW 18 Series </b></h1>
+            <span style="color:white;">Available For</span>
+            <span style="color:rgb(208, 29, 29); "><b>Limited Period</b></span>
+
+        </div>
+
+        <div class="offer" style="background-image: url('/Images/specials/bmw2.png');">
+
+            <h1 style="margin-top: 300px; color:white;"><b>BMW X6 Serie</b>s</h1>
+            <p style="color:rgb(208, 29, 29);"><b>4000rs</b><span style="color:white;">/day</span></p>
+
+        </div>
+    </div>
+
+    </div>
+    <div class="welcome">
+
+        <h1 class="white"><sup class="spangrey">_____</sup><sup class="spanred">_</sup> Why Choose us <sup
+                class="spanred">_</sup><sup class="spangrey">_____</sup> </h1>
+        <p class="white">Welcome to Auto car</p>
+    </div>
+    <div class="why">
+        <div class="logo">
+            <img src="/Images/trust/1.png" class="logoimg" alt=""><br><br>
+            <h2 style="color: white; font-size: 16px;"><b>FINANCING EASY</b></h2>
+            <p style="color: white; font-size: 12px;">Contrary to popular belief. Lorem Ipsum is not simply random text.
+                It has roots in a piece of</p>
+        </div>
+        <div class="logo">
+            <img src="/Images/trust/2.png" class="logoimg" alt=""><br><br>
+            <h2 style="color: rgb(214, 46, 46); font-size: 16px;"><b>Lorem ipsum</b></h2>
+            <p style="color: white; font-size: 12px;">Contrary to popular belief. Lorem Ipsum is not simply random text.
+                It has roots in a piece of</p>
+
+        </div>
+        <div class="logo">
+            <img src="/Images/trust/3.png" class="logoimg" alt=""><br><br>
+            <h2 style="color: white; font-size: 16px;"><b> MADE EASY</b></h2>
+            <p style="color: white; font-size: 12px;">Contrary to popular belief. Lorem Ipsum is not simply random text.
+                It has roots in a piece of</p>
+        </div>
+        <div class="logo">
+            <img src="/Images/trust/4.png" class="logoimg" alt=""><br><br>
+            <h2 style="color: rgb(232, 30, 30); font-size: 16px;"><b>FINANCING </b></h2>
+            <p style="color: white; font-size: 12px;">Contrary to popular belief. Lorem Ipsum is not simply random text.
+                It has roots in a piece of</p>
+        </div>
+
+
+
+
+    </div>
+
+    <br><br><br><br>
+    <footer>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3><b>About Us</b></h3>
+                    <p>Welcome to our Car and Bike Rental Website, your premier destination for top-quality car and bike rentals! Whether you’re embarking on a cross-country road trip, exploring the urban jungle, or just need a reliable ride for your daily commute, we’ve got you covered.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3><b>Contact Us</b></h3>
+                    <ul>
+                        <li><i class="fa fa-map-marker"></i> phagwara,punjab-144401.</li>
+                        <li><i class="fa fa-phone"></i> 1-234-567-890</li>
+                        <li><i class="fa fa-envelope"></i> mangalasrinivas14@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3><b>Social Media</b></h3>
+                    <ul class="social-media">
+                        <li><a href="https://m.facebook.com"><i class="fa fa-facebook">facebook</i></a></li><br>
+                        <li><a href="https://www.instagram.com"><i class="fa fa-twitter">twitter</i></a></li><br>
+                        <li><a href="https://www.instagram.com"><i class="fa fa-instagram">instagram</i></a></li><br>
+                        <li><a href="https://m.facebook.com"><i class="fa fa-linkedin">linkedin </i></a></li><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showVehicles(indexArray) {
+            var vehicles = document.querySelectorAll('.vehicle');
+            vehicles.forEach(function (vehicle, i) {
+                if (indexArray.includes(i)) {
+                    vehicle.style.display = 'block';
+                } else {
+                    vehicle.style.display = 'none';
+                }
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            showVehicles([0,1,2,3,4,5,6,7]);
+        });
+
+    </script>
+    <script src="script.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+
+
+
+</body>
+
+</html>
