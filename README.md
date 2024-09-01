@@ -25,7 +25,20 @@ Developed a fully responsive and visually appealing car and bike rental interfac
 
 ![car5](https://github.com/user-attachments/assets/f3bb085c-fce5-42be-b1af-9cb8e9ef93b7)
 
+# Technologies Used! 
 
+HTML,CSS,BOOTSTRAP AND JS.
+
+# Features!
+
+1.Registration and Login: Forms for users to create an account and log in,
+2.Search Filters: Allow users to filter vehicles by type (car/bike), brand, price range, and availability,
+3.Booking Form: Collect user information (name, contact details, pickup location, etc.) and reservation details,
+4.Vehicle Management: Admins can add, edit, or delete vehicle listings.
+
+# License! 
+
+No license
 
 
 
