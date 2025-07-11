@@ -27,14 +27,34 @@ Developed a fully responsive and visually appealing car and bike rental interfac
 
 # Technologies Used! 
 
-HTML,CSS,BOOTSTRAP AND JS.
+HTML,CSS,JS,ANGULAR AND MYSQL WITH NODE.JS
 
-# Features!
+## 📊 Features
 
-1.Registration and Login: Forms for users to create an account and log in,
-2.Search Filters: Allow users to filter vehicles by type (car/bike), brand, price range, and availability,
-3.Booking Form: Collect user information (name, contact details, pickup location, etc.) and reservation details,
-4.Vehicle Management: Admins can add, edit, or delete vehicle listings.
+**User Registration and Login:**  
+- Forms for users to create an account and log in securely.
+
+**Search Filters:**  
+- Filter vehicles by type (Car/Bike), brand, price range, and availability to quickly find what suits the user’s needs.
+
+**Booking Form:**  
+- Collects user details such as name, contact info, pickup location, and preferred booking dates.
+
+**Vehicle Management (Admin Panel):**  
+- Admins can add new vehicles, edit existing listings, or remove vehicles from the platform.
+
+**SQL Analytics (Backend):**  
+- MySQL queries provide insights on popular vehicles and peak rental times for admin reporting.
+
+**Responsive Design:**  
+- Clean and user-friendly UI optimized for mobile and desktop devices.
+
+**Angular Frontend (Enhanced Version):**  
+- Modular Angular components with service-based architecture to support scalable development.
+
+**RESTful API (Node.js Backend):**  
+- Express.js routes handle vehicle data and booking records, connected to a MySQL database.
+
 
 # License! 
 
